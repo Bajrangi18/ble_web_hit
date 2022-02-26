@@ -37,6 +37,7 @@ function startButton() {
   })
   .then(service => {
       log('Getting Characteristic...');
+      btn.style.display = "none";
       return service.getCharacteristic("beb5483e-36e1-4688-b7f5-ea07361b26a8");
   })
   .then(characteristic => {
